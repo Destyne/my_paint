@@ -1,0 +1,50 @@
+html{
+	
+}
+body
+{
+	background:url("fondpaint.jpg");
+
+}
+#paint {
+	background-color:   #f9fafa  !important; 
+}
+
+
+button:hover
+{
+    cursor: pointer;
+}
+
+#paint
+{
+	border: 1px solid black;
+}
+
+#paint:hover
+{
+    cursor: crosshair;
+}
+#container{
+	display:inline-flex;
+}
+#container2{
+	width: -moz-min-content;
+	font-size: larger;
+	text-align:-moz-center;
+	background-color: seagreen;
+}
+#content{
+	text-align: -moz-center;
+}
+h3{
+	font-family: 'Tangerine', serif;
+	font-size:1,3rem;
+}
+h1{
+	font-family:fantasy;
+	font-size:5rem;
+}
+#figure{
+	display:grid;
+}

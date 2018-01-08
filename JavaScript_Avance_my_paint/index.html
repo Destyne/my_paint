@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Canvas Paint</title>
+</head>
+<body>
+  <div id="container">
+  <h1>Paint</h1>
+  <div id="content">
+    <canvas id="paint"></canvas>
+  </div>
+  <div id="container2">
+    <div class="settings">
+      <h3> couleurs </h3>
+      <form>
+        <input type="color" id="favcolor" onchange="getColor">
+      </form> 
+    </div>
+    <div id="panelgom">
+      <h3> gomme </h3>
+      <select id="bool" onclick="choice()">
+        <option value="false">Gomme Inactive</option>
+        <option value="true"> Gomme Active</option>
+      </select> 
+    </div>
+    <h3>Média</h3>
+    <div id="download">
+      <a href="#" download="image.png" id="a">download img</a>
+    </div>
+    <input type="file" />
+    <div class="settings">
+    	<h3> size </h3>
+      <button onclick="getSize('2');">Small</button>
+      <button onclick="getSize('5');">Med</button>
+      <button onclick="getSize('10');">Large</button>
+      <button onclick="getSize('20');">XXL</button>
+    </div>
+    <h3>Outils</h3>
+    <div id="figure">
+      <input type="radio" name="figure" value="pince">
+      <label for="pince">Pinceau</label>
+      <input type="radio" name="figure" value="line">
+      <label for="ligne">Ligne</label>
+      <input type="radio" name="figure" value="square">
+      <label for="square">Rectangle</label>
+      <input type="radio" name="figure" value="circle">
+      <label for="circle">Cercle</label>
+         <select id="rempl">
+        <option value="false">Remplissage forme inactif</option>
+        <option value="true">Remplissage forme actif</option>
+      </select> 
+       <select id="timing">
+        <option value="false">Pas d'heure </option>
+        <option value="true">Heure planétaire</option>
+      </select> 
+      <form method="GET">
+      <h5>Taille du dessin</h5>
+      <input id="sizeW" placeholder="Préciser la longueur"></input>
+       <input id="sizeH" placeholder="Préciser la largeur">Largeur</input>
+       </form>
+    </div>
+  </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+<!-- crop et calque -->
